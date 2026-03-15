@@ -1,0 +1,18 @@
+part of 'favorites_bloc.dart';
+
+abstract class FavoritesEvent extends Equatable {
+  const FavoritesEvent();
+
+  @override
+  List<Object?> get props => [];
+}
+
+class LoadFavorites extends FavoritesEvent {}
+
+class ToggleFavoriteEvent extends FavoritesEvent {
+  final SkinEntity skin;
+  const ToggleFavoriteEvent(this.skin);
+
+  @override
+  List<Object?> get props => [skin];
+}
