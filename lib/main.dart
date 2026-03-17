@@ -29,7 +29,7 @@ class CS2SkinsApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'CS2 Skins',
+        title: 'Skynex',
         debugShowCheckedModeBanner: false,
         theme: AppTheme.darkTheme,
         home: const HomePage(),

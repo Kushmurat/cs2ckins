@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'CS2 Skins',
+          'Skynex',
           style: TextStyle(
             fontWeight: FontWeight.bold,
             letterSpacing: 1.2,
@@ -38,12 +38,12 @@ class _HomePageState extends State<HomePage> {
         onTap: (index) => setState(() => _currentIndex = index),
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.grid_view),
-            label: 'Market',
+            icon: Icon(Icons.storefront),
+            label: 'Маркет',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
-            label: 'Favorites',
+            icon: Icon(Icons.star),
+            label: 'Избранное',
           ),
         ],
       ),
